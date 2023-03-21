@@ -8,7 +8,7 @@ export interface ButtonProps {
 const Button: React.FC<ButtonProps> = ({ label, style }) => {
     return (
         <div
-            className={`${style} max-w-xs rounded-full font-bold py-8 font-ubuntu text-base`}
+            className={`max-w-xs rounded-full font-bold py-8 font-ubuntu text-base ${style}`}
         >
             {label}
         </div>
