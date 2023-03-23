@@ -3,7 +3,7 @@ import Button from "../../components/inputs/Button/Button";
 
 const hero: React.FC = () => {
     return (
-        <div className="w-full flex items-center justify-center px-16 md:px-0 pb-90">
+        <div className="w-full flex items-center z-20 justify-center px-16 md:px-0 pb-120 py-90">
             <div className="w-full flex flex-col items-center justify-center gap-36">
                 <div className="flex items-center justify-center flex-col">
                     <h1 className="text-center text-white font-overpass font-semibold w-336 md:w-full text-4xl md:text-6xl">

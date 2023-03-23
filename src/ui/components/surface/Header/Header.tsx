@@ -19,7 +19,7 @@ const Header: React.FC<HeaderProps> = () => {
     };
 
     return (
-        <div className="pt-30 w-full px-16 xl:px-0 flex items-center justify-center">
+        <div className="pt-60 w-full px-16 xl:px-0 flex z-20 items-center justify-center">
             <div className="w-full relative max-w-default flex flex-col items-center justify-center gap-40">
                 <div className="w-full flex items-center justify-between">
                     <div className="flex items-center gap-24">
