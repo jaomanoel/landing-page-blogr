@@ -5,15 +5,16 @@ import editorMobile from "../../../assets/images/illustration-editor-mobile.svg"
 
 const design: React.FC = () => {
     return (
-        <div className="w-full flex items-center justify-center pt-90 px-16 overflow-hidden">
+        <div className="w-full flex items-center justify-center pb-220 pt-200 px-16 overflow-hidden">
             <div className="w-full max-w-default flex flex-col items-center justify-center gap-36 relative">
                 <h2 className="text-very-dark-blue font-bold font-overpass text-3xl">
                     Design for the future
                 </h2>
 
                 <div className="w-full flex flex-col lg:flex-row items-center justify-center lg:justify-start gap-36">
-                    <picture className="lg:absolute lg:translate-x-2/4 lg:right-0 lg:w-650">
+                    <picture className="lg:absolute lg:translate-x-2/4 lg:right-0 lg:w-800">
                         <source
+                            className="w-75 h-77"
                             media="(min-width: 1024px)"
                             srcSet={editorDesktop}
                         />
