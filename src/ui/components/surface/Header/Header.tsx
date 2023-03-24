@@ -19,7 +19,7 @@ const Header: React.FC<HeaderProps> = () => {
     };
 
     return (
-        <div className="pt-60 w-full px-16 xl:px-0 flex z-20 items-center justify-center">
+        <div className="pt-60 w-full px-16 xl:px-0 flex z-50 items-center justify-center ">
             <div className="w-full relative max-w-default flex flex-col items-center justify-center gap-40">
                 <div className="w-full flex items-center justify-between">
                     <div className="flex items-center gap-24">
@@ -151,52 +151,54 @@ const Header: React.FC<HeaderProps> = () => {
 
                 {open && (
                     <div className="w-full">
-                        <nav className="bg-white w-full py-24 px-24 rounded-lg flex flex-col gap-24 justify-center ">
+                        <nav className="absolute bg-white w-full py-24 px-24 rounded-lg flex flex-col gap-24 justify-center ">
                             <ul className="w-full flex flex-col items-center justify-center gap-24">
                                 <li className="w-full flex items-center justify-center">
                                     <input
                                         className="peer hidden"
                                         type="radio"
                                         name="menu"
-                                        id="product"
+                                        id="productId"
                                     />
                                     <label
-                                        htmlFor="product"
-                                        className="flex items-center text-very-dark-black-blue hover:text-very-dark-blue font-overpass gap-4 font-semibold text-lg peer-checked:>>>img:rotate-10"
+                                        htmlFor="productId"
+                                        className="flex items-center text-very-dark-black-blue hover:text-very-dark-blue font-overpass gap-4 font-semibold text-lg cursor-pointer peer-checked:[&>img]:rotate-180"
                                     >
                                         Product
                                         <img src={arrowDark} alt="Product" />
                                     </label>
                                 </li>
+
                                 <li className="w-full flex items-center justify-center">
                                     <input
                                         className="peer hidden"
                                         type="radio"
                                         name="menu"
-                                        id="company"
+                                        id="companyId"
                                     />
                                     <label
-                                        htmlFor="company"
-                                        className="flex items-center text-very-dark-black-blue hover:text-very-dark-blue font-overpass gap-4 font-semibold text-lg
-                                        peer-checked:img:rotate-90"
+                                        htmlFor="companyId"
+                                        className="flex items-center cursor-pointer text-very-dark-black-blue hover:text-very-dark-blue font-overpass gap-4 font-semibold text-lg
+                                        peer-checked:[&>img]:rotate-180"
                                     >
                                         Company{" "}
                                         <img src={arrowDark} alt="Company" />
                                     </label>
                                 </li>
+
                                 <li className="w-full flex flex-col gap-24 items-center justify-center">
                                     <input
                                         className="peer hidden"
                                         type="radio"
                                         name="menu"
-                                        id="connect"
+                                        id="connectId"
                                     />
                                     <label
-                                        htmlFor="connect"
-                                        className="flex items-center text-very-dark-black-blue hover:text-very-dark-blue font-overpass gap-4 font-semibold text-lg
-                                        peer-checked:img:rotate-90"
+                                        htmlFor="connectId"
+                                        className="flex items-center cursor-pointer text-very-dark-black-blue hover:text-very-dark-blue font-overpass gap-4 font-semibold text-lg
+                                        peer-checked:[&>img]:rotate-180"
                                     >
-                                        Connect{" "}
+                                        Connect
                                         <img src={arrowDark} alt="Connect" />
                                     </label>
 
@@ -234,9 +236,12 @@ const Header: React.FC<HeaderProps> = () => {
                             <div className="w-full h-[1px] bg-grayish-blue"></div>
 
                             <div className="w-full flex flex-col gap-20 items-center justify-center">
-                                <h3 className="font-semibold text-xl text-very-dark-blue font-overpass">
+                                <a
+                                    href="#"
+                                    className="font-semibold text-xl text-very-dark-blue font-overpass"
+                                >
                                     Login
-                                </h3>
+                                </a>
 
                                 <Button
                                     label="Sign up"

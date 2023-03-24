@@ -5,9 +5,9 @@ import editorMobile from "../../../assets/images/illustration-editor-mobile.svg"
 
 const design: React.FC = () => {
     return (
-        <div className="w-full flex items-center justify-center pb-220 pt-200 px-16 overflow-hidden">
+        <div className="w-full flex items-center justify-center pb-300 md:pb-350 pt-120 md:pt-250 px-16 overflow-hidden">
             <div className="w-full max-w-default flex flex-col items-center justify-center gap-36 relative">
-                <h2 className="text-very-dark-blue font-bold font-overpass text-3xl">
+                <h2 className="text-very-dark-blue font-bold font-overpass text-3xl md:text-4xl md:-translate-y-40">
                     Design for the future
                 </h2>
 
